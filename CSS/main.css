@@ -91,8 +91,10 @@ main {
 
 .redes a:hover,
 .icon-plus-1:hover {
-    border: 1px solid var(--PrincipalOscuro);
-}
+        border: 1px solid var(--PrincipalOscuro);
+        color: var(--PrincipalOscuro);
+        background: var(--White);
+    }
 
 .icon-plus-1:hover {
     transform: scale(1.1);
@@ -119,30 +121,25 @@ main {
 
 /* --------------------------------------------------------------------------------- */
 
+/* NAVBAR */
+
 .navbar {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--PrincipalOscuro);
-
+    background: var(--White);
+    box-shadow: 0px -2px 13px 0px rgba(0,0,0,0.48);
 }
-
-/* NAVBAR MOBILE*/
 
 .navbar-mobile {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem;
-    color: var(--White);
-    background: var(--PrincipalOscuro);
 }
 
 nav h2 a, nav a, header button a {
-    color: var(--White);
+        color: var(--PrincipalOscuro);
 }
-
-
-/* NAVBAR DEKTOPS*/
 
 
 /* HEADER */
@@ -189,10 +186,25 @@ header p span, .servicios p span {
     background-color: var(--BlueDark);
 }
 
-.map-article {
+.map-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.map-title {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.map-title i {
+    margin-top: .25rem;
+}
+
+.map-div p {
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .map {
@@ -207,7 +219,7 @@ header p span, .servicios p span {
     flex-direction: column;
     gap: .7rem;
     text-align: center;
-    margin: 5rem 2rem;
+    margin: 5rem .5rem;
     border-top: 1px solid rgb(214, 214, 214);
     padding-top: 2.8rem;
 }
@@ -239,6 +251,7 @@ header p span, .servicios p span {
 
 .servicios-card-title h3 {
     font-weight: bold;
+    font-size: 24px;
 }
 
 .servicios-card-title i {
@@ -252,12 +265,20 @@ header p span, .servicios p span {
 }
 
 .servicio-contenido p {
-    margin-top: 1rem;
+    font-size: 15px;
+    margin-top: .5rem;
+    color: rgb(124, 124, 124);
+}
+
+.rep-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .servicio-03 .servicio-contenido ul li{
     margin-left: .7rem;
     margin-top: .5rem;
+    color: rgb(124, 124, 124);
 }
 
 .servicio-card img {
@@ -343,7 +364,7 @@ footer {
     font-size: 1.3rem;
 }
 
-.pedroMontt {
+.pedroMontt, .chile {
         color: var(--White);
 }
 
@@ -389,82 +410,11 @@ a[href^="tel:"] {
         font-size: 1.7rem;
     }
 
-    .navbar_mobile {
-        padding: 1rem 3.5rem;
-    }
-
-    .contact_info {
-        font-size: 1.5rem;
-    }
 }
 
 
-@media screen and (min-width: 540px) {
 
-    /* NAVBAR */
-
-    .links_dektops {
-        display: flex;
-        align-items: center;
-        gap: 4rem;
-    }
-
-
-    .links_dektops .faq {
-    padding: .8rem 5rem;
-    font-weight: 500;
-    border-radius: .8rem;
-    color: var(--White);
-    background: var(--Principal);
-    transition: all .2s ease;
-    }
-
-    .links_dektops .faq:hover {
-        background-color: var(--PrincipalOscuro);
-    }
-
-
-    /* PRODUCTOS */
-
-    .product-card {
-        grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .product-card:nth-of-type(2) h3,
-    .product-card:nth-of-type(3) h3,
-    .product-card:nth-of-type(4) h3 {
-        font-size: 1.9rem;
-    }
-
-    .product-card:nth-of-type(2) img,
-    .product-card:nth-of-type(4) img,
-    .product-card:nth-of-type(6) img,
-    .product-card:nth-of-type(8) img {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-    }
-}
-
-/* TABLETS AND DEKTOPS */
-
-@media screen and (min-width: 650px) {
-
-    /* FLOATS */
-
-    .redes a:hover,
-    .icon-plus-1:hover {
-        border: 1px solid var(--PrincipalOscuro);
-        color: var(--PrincipalOscuro);
-        background: var(--White);
-    }
-
-}
-
-
-@media screen and (min-width: 830px) {
-
+@media screen and (min-width: 700px) {
 
     /* Footer */
 
@@ -474,19 +424,9 @@ a[href^="tel:"] {
 }
 
 
-@media screen and (min-width:1000px) {
-
-}
-
 @media screen and (min-width: 1250px) {
 
     .floats {
         right: 2rem;
     }
-}
-
-
-@media screen and (min-width: 1570px) {
-
-
 }
