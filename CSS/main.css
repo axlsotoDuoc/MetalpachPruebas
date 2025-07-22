@@ -59,6 +59,10 @@ main {
     z-index: -50;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /* FLOATS */
 
 #btn-mas {
@@ -226,6 +230,7 @@ header p span, .servicios p span {
 
 .servicios-container {
     display: grid;
+    align-content: flex-start;
     text-align: start;
     gap: 3rem;
     margin-top: 2.5rem;
