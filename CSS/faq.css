@@ -16,12 +16,64 @@
     box-sizing: border-box;
 }
 
+details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem 1.8rem;
+    border: .5px solid rgb(218, 218, 218);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+.details-content {
+    display: grid;
+    gap: 1rem;
+    margin: 2.5rem auto;
+}
+
+.details-content div span {
+    font-weight: 900;
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--BlueDark);
+}
+
+summary svg {
+    margin-right: .3rem;
+}
+
+.map-article-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
 
 /* NAVBAR */
 
-.navbar-mobile {
+.navbar {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow {
+    rotate: 180deg;
+    color: var(--BlueDark);
 }
 
 /* MOBILE */
@@ -37,74 +89,49 @@
     border-bottom: 2px solid var(--Principal);
 }
 
-.header-cont header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
 .main-faq .header-cont {
     display: grid;
     text-align: center;
-    gap: 2rem;
-    padding: 2rem;
-    margin: .5rem auto;
+    max-width: 70rem;
+    gap: 3rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
     background: var(--White);
 }
 
 header h1 {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-size: 3.5rem;
+    font-size: 5rem;
     color: var(--BlueDark);
 }
 
-.header-cont p:first-of-type {
+.header-cont span {
     font-size: 2rem;
     font-weight: 600;
     color: red;
 }
 
-.header-cont p:last-of-type {
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: rgb(109, 109, 109);
+.header-cont p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
 }
 
 
 /* FAQS */
 
 .acordeon-contenedor {
-    width: 100%;
+    display: grid;
     margin: 3rem auto;
     max-width: 80rem;
 }
 
-.acordeon-contenedor h1 {
-    margin: 2.5rem;
-}
 
 .acordeon-contenedor h2 {
     font-weight: 200;
     font-size: 1.8rem;
     margin: 3rem .5rem;
     color: rgb(150, 150, 150);
-}
-
-.acordeon label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    transition: all .3s ease;
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: .5rem;
-    color: var(--BlueDark);
-    background: var(--White);
 }
 
 .acordeon label h3 {
