@@ -101,6 +101,7 @@ summary svg {
 }
 
 header h1 {
+    text-align: center;
     font-size: 5rem;
     color: var(--BlueDark);
 }
