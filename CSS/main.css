@@ -141,7 +141,7 @@ main {
     top: 0;
     z-index: 100;
     background: var(--White);
-    box-shadow: 0px -2px 13px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.48);
 }
 
 .navbar-mobile {
@@ -159,18 +159,19 @@ nav h2 a, nav a, header button a {
 header {
     display: flex;
     flex-direction: column;
-    gap: .7rem;
+    gap: 1rem;
     text-align: center;
-    margin: 1rem 0;
+    margin: 0rem 0;
     padding: .7rem 1.5rem;
 }
 
 header h1 {
     font-size: 4rem;
+    margin-top: 1rem;
 }
 
 header p {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 header .main-img {
@@ -221,10 +222,6 @@ header p span, .servicios p span {
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-.map-title i {
-    margin-top: .25rem;
 }
 
 .map-div span {
