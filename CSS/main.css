@@ -9,6 +9,7 @@
     --Gray: #bebebe;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -87,7 +88,7 @@ main {
     border-radius: 50%;
     scale: 1.1;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all .1s ease;
     border: 1px solid transparent;
     color: var(--White);
     background: var(--PrincipalOscuro);
@@ -157,6 +158,12 @@ header {
     padding: .7rem 1.5rem;
 }
 
+header .main-img {
+    height: 40rem;
+    object-fit: cover;
+}
+
+
 .h1-flex {
     display: flex;
     justify-content: center;
@@ -206,7 +213,7 @@ header p span, .servicios p span {
     margin-top: .25rem;
 }
 
-.map-div p {
+.map-div span {
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -214,6 +221,10 @@ header p span, .servicios p span {
 .map {
     border: none;
     height: 25rem;
+}
+
+.arrow {
+    margin-left: .5rem;
 }
 
 /* SERVICIOS */
@@ -230,7 +241,7 @@ header p span, .servicios p span {
 
 .servicios-container {
     display: grid;
-    align-content: flex-start;
+    align-content: center;
     text-align: start;
     gap: 3rem;
     margin-top: 2.5rem;
@@ -243,8 +254,9 @@ header p span, .servicios p span {
 }
 
 .servicio-card {
-    height: auto;
-    margin: .5rem 4rem;
+    max-width: 275px;
+    height: 444px;
+    margin: .5rem auto;
     border-radius: 1rem;
     box-shadow: 0px 0px 7px 0px rgba(170, 170, 170, 0.75);
 }
@@ -391,7 +403,6 @@ a[href^="tel:"] {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    grid-template-columns: 1fr 1fr;
 }
 
 .social-icons-footer a svg {
@@ -409,15 +420,30 @@ a[href^="tel:"] {
 /* MEDIAS */
 
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 630px) {
 
-    body {
-        font-size: 1.7rem;
+    .servicios {
+        margin: 5rem 2rem;
+    }
+
+    .servicios-container {
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .servicio-01 .servicios-contacto-icons {
+        margin-top: 2.65rem;
+    }
+
+    .servicio-01, .servicio-02 {
+        margin-bottom: 1.5rem;
+    }
+
+    .servicio-03, .servicio-04 {
+        margin-top: 1.5rem;
     }
 
 }
-
-
 
 @media screen and (min-width: 700px) {
 
@@ -428,10 +454,51 @@ a[href^="tel:"] {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .servicios-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .servicio-01, .servicio-02 {
+        margin-bottom: 0;
+    }
+
+    .servicio-03 {
+        margin-top: 0;
+    }
+
+    .servicio-04 {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 @media screen and (min-width: 1250px) {
 
     .floats {
         right: 2rem;
+    }
+
+    .servicios-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .servicio-04 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    footer {
+        padding: 5rem 0;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
