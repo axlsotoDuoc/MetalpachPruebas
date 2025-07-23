@@ -134,66 +134,10 @@ header h1 {
     color: rgb(150, 150, 150);
 }
 
-.acordeon label h3 {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.acordeon label svg {
-    color: var(--Black);
-}
-
-.acordeon .acordeon-contenido {
-    display: grid;
-    text-align: start;
-    gap: 2rem;
-    margin: 0 2rem;
-    max-height: 0px;
-    font-weight: 400;
-    overflow: hidden;
-    transition: all .3s ease;
-    color: rgb(255, 0, 0);
-}
-
-.acordeon .acordeon-contenido span {
-    color: rgb(100, 100, 100);
-}
-
-
-.btn-acordeon:checked~.acordeon-contenido {
-    max-height: 60rem;
-    padding: 3rem 0;
-}
-
-.btn-acordeon {
-    display: none;
-}
-
 /* TABLETS AND DEKTOPS */
-
-@media screen and (max-width: 530px) {
-    .header-cont header svg {
-        display: none;
-    }
-}
 
 @media screen and (min-width: 30rem) {
     .acordeon-contenedor {
         width: 90%;
-    }
-}
-
-@media screen and (min-width: 50rem) {
-
-    .navbar_mobile {
-        display: none;
-    }
-
-    .navbar_dektops {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20rem;
-        padding: .5rem;
     }
 }
