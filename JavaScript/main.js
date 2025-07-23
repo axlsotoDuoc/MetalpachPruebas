@@ -9,6 +9,14 @@ window.addEventListener('DOMContentLoaded', function () {
         distance: `-100px`
     });
 
+    window.sr = ScrollReveal();
+
+    sr.reveal(`.banner`, {
+        duration: 800,
+        origin: `bottom`,
+        distance: `-100px`
+    });
+
 
 });
 

@@ -126,6 +126,14 @@ main {
 
 /* --------------------------------------------------------------------------------- */
 
+.banner {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: var(--BlueDark);
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -146,7 +154,6 @@ nav h2 a, nav a, header button a {
         color: var(--PrincipalOscuro);
 }
 
-
 /* HEADER */
 
 header {
@@ -159,10 +166,8 @@ header {
 }
 
 header .main-img {
-    height: 40rem;
-    object-fit: cover;
+    height: 20rem;
 }
-
 
 .h1-flex {
     display: flex;
