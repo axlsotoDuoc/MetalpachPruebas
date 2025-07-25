@@ -148,7 +148,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3rem 2rem;
+    padding: 1.5rem 2rem;
 }
 
 nav h2 a, nav a {
