@@ -147,11 +147,16 @@ main {
 .navbar-mobile {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
+    align-items: center;
+    padding: 1.3rem 2rem;
 }
 
-nav h2 a, nav a, header button a {
-        color: var(--PrincipalOscuro);
+nav h2 a, nav a {
+    color: var(--PrincipalOscuro);
+}
+
+.faq-navbar:hover {
+    text-decoration: underline;
 }
 
 /* HEADER */
@@ -159,13 +164,13 @@ nav h2 a, nav a, header button a {
 header {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    text-align: start;
+    gap: 1.3rem;
     padding: .7rem 2rem;
+    padding-right: 3.5rem;
 }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 3.3rem;
 }
 
 header p {
@@ -183,7 +188,7 @@ header p span, .servicios p span {
 .obras-button {
     text-align: center;
     font-size: 1.4rem;
-    width: 55%;
+    width: 53%;
     padding: .8rem;
     border: none;
     border-radius: 5px;
@@ -232,95 +237,49 @@ header p span, .servicios p span {
 /* SERVICIOS */
 
 .servicios {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: .7rem;
-    margin: 2rem .5rem;
+    display: grid;
+    padding: 0 2rem;
+    padding-right: 3.5rem;
+    margin-bottom: 10rem;
 }
 
-.servicios p:first-of-type{
-    font-size: 1.7rem;
+.servicios-title {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.servicios-title p {
+    font-size: 1.8rem;
+    color: #474747;
+}
+
+.servicios-title h2 {
+    font-size: 2.5rem;
 }
 
 .servicios-container {
     display: grid;
-    align-content: center;
-    text-align: start;
-    gap: 3rem;
-    margin-top: 2.5rem;
+    gap: 3.5rem;
 }
 
-.servicios h2 {
-    font-size: 3rem;
-}
-
-.servicio-card {
-    max-width: 275px;
-    height: 444px;
-    margin: .5rem auto;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 7px 0px rgba(196, 196, 196, 0.75);
-}
-
-.servicios-card-title {
-    display: flex;
-    align-items: center;
-}
-
-.servicios-card-title h3 {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.servicios-card-title i {
-    margin-left: 1rem;
-    margin-top: .3ren;
-}
-
-.servicio-contenido {
-    margin: .5rem 1.2rem;
-    margin-right: 3rem;
-}
-
-.servicio-contenido p {
-    font-size: 15px;
-    margin-top: .5rem;
-    color: rgb(124, 124, 124);
-}
-
-.rep-grid {
+.servicio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.servicio-03 .servicio-contenido ul li{
-    margin-left: .7rem;
-    margin-top: .5rem;
-    color: rgb(124, 124, 124);
-}
-
-.servicio-card img {
-    border-radius: 1rem;
-    height: 17rem;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.servicio-contenido {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    padding: 1rem 0;
-}
-
-.servicios-contacto-icons {
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    margin-right: 1.5rem;
-    margin-bottom: .5rem;
+    grid-template-columns: 30px auto;
     gap: 1rem;
+}
+
+.servicio i {
+    margin-top: 1.3rem;
+}
+
+.servicio-content span:first-of-type {
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.servicio-content span {
+    font-weight: 600;
 }
 
 
@@ -424,28 +383,9 @@ a[href^="tel:"] {
 
 @media screen and (min-width: 630px) {
 
-    .servicios {
-        margin: 5rem 2rem;
+
     }
 
-    .servicios-container {
-        gap: 0rem;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .servicio-01 .servicios-contacto-icons {
-        margin-top: 2.65rem;
-    }
-
-    .servicio-01, .servicio-02 {
-        margin-bottom: 1.5rem;
-    }
-
-    .servicio-03, .servicio-04 {
-        margin-top: 1.5rem;
-    }
-
-}
 
 @media screen and (min-width: 700px) {
 
@@ -457,21 +397,6 @@ a[href^="tel:"] {
 }
 
 @media screen and (min-width: 1000px) {
-    .servicios-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .servicio-01, .servicio-02 {
-        margin-bottom: 0;
-    }
-
-    .servicio-03 {
-        margin-top: 0;
-    }
-
-    .servicio-04 {
-        margin-top: 4rem;
-    }
 }
 
 @media screen and (min-width: 1190px) {
@@ -488,13 +413,6 @@ a[href^="tel:"] {
         right: 2rem;
     }
 
-    .servicios-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .servicio-04 {
-        margin-top: 0;
-    }
 }
 
 @media screen and (min-width: 1300px) {
