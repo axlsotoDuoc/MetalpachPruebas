@@ -210,8 +210,8 @@ header p span, .servicios p span {
     text-align: center;
     margin: 2rem 0;
     padding: 2rem 0;
-    border-top: .5px solid rgb(224, 224, 224);
-    border-bottom: .5px solid rgb(224, 224, 224);
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .map-title {
@@ -265,7 +265,7 @@ header p span, .servicios p span {
 
 .servicios-container article {
     padding-bottom: 2rem;
-    border-bottom: .5px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .servicio {
