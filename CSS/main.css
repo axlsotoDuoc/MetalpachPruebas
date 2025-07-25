@@ -263,6 +263,11 @@ header p span, .servicios p span {
     gap: 3.5rem;
 }
 
+.servicios-container article {
+    padding-bottom: 2rem;
+    border-bottom: .5px solid rgb(224, 224, 224);
+}
+
 .servicio {
     display: grid;
     grid-template-columns: 30px auto;
