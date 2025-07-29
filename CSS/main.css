@@ -140,15 +140,12 @@ main {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--White);
-    box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.48);
-}
-
-.navbar-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
+    background: var(--White);
+    box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.48);
 }
 
 nav h2 a, nav a {
@@ -162,10 +159,14 @@ nav h2 a, nav a {
 /* HEADER */
 
 header {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
     padding: .7rem 2rem;
+}
+
+.header-content {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: .7rem 0rem;
     padding-right: 3.5rem;
 }
 
@@ -185,12 +186,15 @@ header p span, .servicios p span {
     font-weight:800;
 }
 
-.obras-button {
+.contacto-container {
+    margin-top: 1rem;
+}
+
+.contacto {
     text-align: center;
+    padding: .8rem 1.5rem;
     font-size: 1.4rem;
-    width: 53%;
-    padding: .8rem;
-    border: none;
+    max-width: 14rem;
     border-radius: 5px;
     color: var(--White);
     background-color: var(--PrincipalOscuro);
@@ -198,7 +202,7 @@ header p span, .servicios p span {
     cursor: pointer;
 }
 
-.obras-button:hover {
+.contacto:hover {
     background-color: var(--BlueDark);
 }
 
@@ -245,13 +249,24 @@ header p span, .servicios p span {
 
 .servicios-title {
     display: grid;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin: 2rem 0 5rem 0;
 }
 
 .servicios-title p {
     font-size: 1.8rem;
     color: #474747;
+}
+
+.servicios-title-h2-cont {
+    display: grid;
+}
+
+.servicios-title-h2-cont hr {
+    width: 8rem;
+    height: .3rem;
+    border: none;
+    background: rgb(165, 47, 47);
 }
 
 .servicios-title h2 {
@@ -383,21 +398,48 @@ a[href^="tel:"] {
     color: var(--White);
 }
 
-/* MEDIAS */
+/* MEDIAS QUERYS*/
 
-
-@media screen and (min-width: 630px) {
-
-
+@media screen and (min-width: 670px) {
+    
+     /* SERVICIOS */
+    .servicios {
+        margin: 0 5rem;
     }
 
-
-@media screen and (min-width: 700px) {
-
     /* Footer */
-
     footer {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    header {
+        display: grid;
+        grid-template-columns: .9fr 1fr;
+        padding: 1rem 2rem;
+        padding-right: 4rem;
+        gap: 3rem;
+    }
+
+    header .main-img {
+        height: 30rem;
+        margin-top: 2rem;
+    }
+
+    .header-right {
+        padding: .7rem 0rem;
+        padding-right: .0;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+    /* SERVICIOS */
+    .servicios {
+        margin: 0 10rem;
     }
 }
 
