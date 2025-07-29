@@ -461,17 +461,39 @@ a[href^="tel:"] {
         font-size: 1.3rem;
     }
 
-
     .map {
         width: 45rem;
     }
+
+    /* SERVICIOS */
+
+    .servicios {
+        margin: 0 12rem;
+    }
+
+    .servicios-title-h2-cont h2 {
+        font-size: 3rem;
+    }
+
+    .servicio-content, .servicio-content span:first-of-type {
+        font-size: 1.8rem;
+    }
+
 }
 
 @media screen and (min-width: 900px) {
     
     /* SERVICIOS */
     .servicios {
-        margin: 0 10rem;
+        margin: 0 15rem;
+    }
+
+    .servicios-title-h2-cont h2 {
+        font-size: 3rem;
+    }
+
+    .servicio-content, .servicio-content span:first-of-type {
+        font-size: 1.8rem;
     }
 }
 
