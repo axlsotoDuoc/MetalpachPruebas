@@ -40,36 +40,40 @@
 /* HEADER */
 
 header {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        max-width: 70rem;
-        gap: 3rem;
-        padding: 0 2rem;
-        margin: 0 auto;
-        margin-top: 2rem;
-        background: var(--White);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 70rem;
+    gap: 3rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background: var(--White);
 }
     
 header h1 {
-        text-align: center;
-        font-size: 5rem;
-        color: var(--BlueDark);
+    text-align: center;
+    font-size: 5rem;
+    color: var(--BlueDark);
 }
     
     .header-cont span {
-        font-size: 2rem;
-        font-weight: 600;
-        color: rgb(173, 56, 56);
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(173, 56, 56);
 }
     
 .header-cont p {
-        font-size: 2rem;
-        font-weight: 400;
-        color: rgb(58, 58, 58);
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
 }
 
 /* DETAILS */
+
+.acordeon-contenedor {
+    width: 90%;
+}
 
 .acordeon-h2 {
     display: flex;
@@ -86,7 +90,6 @@ details {
     border-radius: .5rem;
     cursor: pointer;
 }
-
 
 .details-content {
     display: grid;
@@ -117,7 +120,6 @@ summary svg {
     margin-top: 2rem;
 }
 
-
 /* FAQS */
 
 .acordeon-contenedor {
@@ -126,7 +128,6 @@ summary svg {
     max-width: 80rem;
 }
 
-
 .acordeon-contenedor h2 {
     font-weight: 200;
     font-size: 1.8rem;
@@ -134,10 +135,3 @@ summary svg {
     color: rgb(150, 150, 150);
 }
 
-/* TABLETS AND DEKTOPS */
-
-@media screen and (min-width: 30rem) {
-    .acordeon-contenedor {
-        width: 90%;
-    }
-}
