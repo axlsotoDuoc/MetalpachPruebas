@@ -442,14 +442,15 @@ a[href^="tel:"] {
     /* MAP */
     .map-div {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
         align-items: center;
-        margin-left: 2rem;
     }
 
     .map-title {
+        text-align: start;
         font-size: 3rem;
         color: rgb(85, 85, 85);
+        margin-left: 3rem;
     }
 
     .map-div span:last-of-type {
