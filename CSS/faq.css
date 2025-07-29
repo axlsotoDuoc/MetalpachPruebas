@@ -16,6 +16,67 @@
     box-sizing: border-box;
 }
 
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow {
+    rotate: 180deg;
+    color: var(--BlueDark);
+}
+
+/* HEADER */
+
+header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 70rem;
+        gap: 3rem;
+        padding: 0 2rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        background: var(--White);
+}
+    
+header h1 {
+        text-align: center;
+        font-size: 5rem;
+        color: var(--BlueDark);
+}
+    
+    .header-cont span {
+        font-size: 2rem;
+        font-weight: 600;
+        color: rgb(173, 56, 56);
+}
+    
+.header-cont p {
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgb(58, 58, 58);
+}
+
+/* DETAILS */
+
+.acordeon-h2 {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
 details {
     display: flex;
     flex-direction: column;
@@ -54,68 +115,6 @@ summary svg {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-}
-
-/* NAVBAR */
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-.navbar h2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.arrow {
-    rotate: 180deg;
-    color: var(--BlueDark);
-}
-
-/* MOBILE */
-
-.acordeon-h2 {
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-}
-
-.links_dektops li a {
-    color: var(--Principal);
-    border-bottom: 2px solid var(--Principal);
-}
-
-.main-faq .header-cont {
-    display: grid;
-    text-align: center;
-    max-width: 70rem;
-    gap: 3rem;
-    padding: 0 2rem;
-    margin: 0 auto;
-    margin-top: 2rem;
-    background: var(--White);
-}
-
-header h1 {
-    text-align: center;
-    font-size: 5rem;
-    color: var(--BlueDark);
-}
-
-.header-cont span {
-    font-size: 2rem;
-    font-weight: 600;
-    color: red;
-}
-
-.header-cont p {
-    font-size: 2rem;
-    font-weight: 400;
-    color: rgb(58, 58, 58);
 }
 
 

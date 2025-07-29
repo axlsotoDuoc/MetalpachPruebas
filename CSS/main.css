@@ -454,8 +454,13 @@ a[href^="tel:"] {
     }
 
     .map-div span:last-of-type {
-    font-size: 1.3rem;
-}
+        font-size: 1.3rem;
+    }
+
+    .map-div span:last-of-type {
+        font-size: 1.3rem;
+    }
+
 
     .map {
         width: 45rem;
