@@ -111,7 +111,7 @@ details {
     margin: 2.5rem auto;
 }
 
-.details-content div span {
+.details-content p span {
     font-weight: 900;
 }
 
@@ -123,8 +123,6 @@ summary {
     font-size: 2rem;
     color: var(--BlueDark);
 }
-
-
 
 .map-article-div {
     display: flex;
