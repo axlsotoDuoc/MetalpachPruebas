@@ -84,11 +84,16 @@ header h1 {
     gap: .3rem;
 }
 
+.acordeon-contenedor h2:first-of-type {
+    margin-top: 2.5rem;
+}
+
 .acordeon-contenedor h2 {
     font-weight: 200;
     font-size: 1.8rem;
-    margin: 3rem .5rem;
-    color: rgb(150, 150, 150);
+    margin: 4rem .5rem;
+    margin-bottom: 2rem;
+    color: var(--BlueDark);
 }
 
 details {
@@ -96,8 +101,7 @@ details {
     flex-direction: column;
     margin-bottom: 1rem;
     padding: 1rem 1.8rem;
-    border: 1px solid rgb(211, 211, 211);
-    border-radius: .5rem;
+    border: 1px solid rgb(223, 223, 223);
     cursor: pointer;
 }
 
@@ -120,9 +124,7 @@ summary {
     color: var(--BlueDark);
 }
 
-summary svg {
-    margin-right: .3rem;
-}
+
 
 .map-article-div {
     display: flex;

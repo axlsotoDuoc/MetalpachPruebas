@@ -163,7 +163,9 @@ header {
 }
 
 .header-content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     gap: 1rem;
     margin-top: 1rem;
     padding: .7rem 0rem;
@@ -443,14 +445,19 @@ a[href^="tel:"] {
     .map-div {
         display: grid;
         grid-template-columns: 1.5fr 2fr;
-        align-items: center;
     }
 
     .map-title {
+        display: grid;
         text-align: start;
         font-size: 3rem;
         color: rgb(85, 85, 85);
         margin-left: 3rem;
+    }
+
+    .map-title h3 {
+        font-size: 3rem;
+        font-weight: bold;
     }
 
     .map-div span:last-of-type {
@@ -462,7 +469,7 @@ a[href^="tel:"] {
     }
 
     .map {
-        width: 45rem;
+        width: 40rem;
     }
 
     /* SERVICIOS */
@@ -497,7 +504,12 @@ a[href^="tel:"] {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1060px) {
+    
+    /* SERVICIOS */
+    .servicios {
+        margin: 0 20rem;
+    }
 }
 
 @media screen and (min-width: 1190px) {
@@ -522,4 +534,14 @@ a[href^="tel:"] {
         padding: 5rem 0;
         grid-template-columns: repeat(4, 1fr);
     }
+
+      /* SERVICIOS */
+    .servicios {
+        margin: 0 30rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+
 }
