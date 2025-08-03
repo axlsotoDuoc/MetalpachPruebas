@@ -71,11 +71,11 @@ main {
     text-align: center;
     position: fixed;
     z-index: 200;
-    bottom: 2rem;
+    bottom: 1rem;
     right: 1.5rem;
-    width: 4.5rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
     border-radius: 50%;
     cursor: pointer;
     background: #25d366;
