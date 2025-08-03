@@ -64,64 +64,25 @@ main {
     navigation: auto;
 }
 
-/* FLOATS */
+/* FLOAT */
 
-#btn-mas {
-    display: none;
-}
-
-.floats {
-    z-index: 200;
-    position: fixed;
-    bottom: 2rem;
-    right: 1rem;
-}
-
-.redes a,
-.icon-plus-1 {
+.ws-float {
     display: block;
     text-align: center;
-    width: 4rem;
-    height: 4rem;
-    line-height: 4rem;
-    margin: 1rem 0;
+    position: fixed;
+    z-index: 200;
+    bottom: 2rem;
+    right: 1.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
     border-radius: 50%;
-    scale: 1.1;
     cursor: pointer;
-    transition: all .1s ease;
-    border: 1px solid transparent;
-    color: var(--White);
-    background: var(--PrincipalOscuro);
+    background: #25d366;
 }
 
-.redes a:hover,
-.icon-plus-1:hover {
-        border: 1px solid var(--PrincipalOscuro);
-        color: var(--PrincipalOscuro);
-        background: var(--White);
-    }
-
-.icon-plus-1:hover {
-    transform: scale(1.1);
-}
-
-.redes a {
-    margin-bottom: -5rem;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#btn-mas:checked~.redes a {
-    margin-bottom: 1rem;
-    opacity: 1;
-    visibility: visible;
-}
-
-#btn-mas:checked~.btn-mas .icon-plus-1 {
-    transform: rotate(137deg);
-    border: 1px solid var(--PrincipalOscuro);
-    color: var(--PrincipalOscuro);
-    background: var(--White);
+.ws-float:hover {
+    transform: scale(1.05);
 }
 
 /* --------------------------------------------------------------------------------- */
@@ -221,16 +182,14 @@ header p span, .servicios p span {
     border-bottom: 1px solid rgb(224, 224, 224);
 }
 
-.map-title {
-    display: grid;
-}
-
-.map-div span:first-of-type {
+.map-title h3 {
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
-.map-div span:last-of-type {
+.map-div span {
+    font-weight: lighter;
     font-size: 1rem;
 }
 
@@ -248,23 +207,20 @@ header p span, .servicios p span {
 .servicios {
     display: grid;
     padding: 0 2rem;
-    padding-right: 3.5rem;
-    margin-bottom: 10rem;
+    margin: 0 auto;
 }
 
 .servicios-title {
     display: grid;
     gap: 2rem;
-    margin: 2rem 0 5rem 0;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+    padding-right: 2rem;
 }
 
 .servicios-title p {
     font-size: 1.8rem;
     color: #474747;
-}
-
-.servicios-title-h2-cont {
-    display: grid;
 }
 
 .servicios-title-h2-cont hr {
@@ -405,12 +361,25 @@ a[href^="tel:"] {
 
 /* MEDIAS QUERYS*/
 
-@media screen and (min-width: 670px) {
+@media screen and (width >= 500px) {
     
-     /* SERVICIOS */
+  /* SERVICIOS */
+    .servicios {
+        margin: 0 2rem;
+    }
+
+}
+
+@media screen and (width >= 600px) {
+    
+  /* SERVICIOS */
     .servicios {
         margin: 0 5rem;
     }
+
+}
+
+@media screen and (width >= 670px) {
 
     /* Footer */
     footer {
@@ -418,8 +387,26 @@ a[href^="tel:"] {
     }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (width >= 700px) {
+    
+  /* SERVICIOS */
+    .servicios {
+        margin: 0 7rem;
+    }
 
+}
+
+@media screen and (width >= 780px) {
+    
+  /* SERVICIOS */
+    .servicios {
+    
+        margin: 0 10rem;
+    }
+
+}
+
+@media screen and (width >= 820px) {
     /*HEADER*/
 
     header {
@@ -445,10 +432,10 @@ a[href^="tel:"] {
     .map-div {
         display: grid;
         grid-template-columns: 1.5fr 2fr;
+        margin: 0 auto;
     }
 
     .map-title {
-        display: grid;
         text-align: start;
         font-size: 3rem;
         color: rgb(85, 85, 85);
@@ -504,11 +491,12 @@ a[href^="tel:"] {
     }
 }
 
+
 @media screen and (min-width: 1060px) {
     
     /* SERVICIOS */
     .servicios {
-        margin: 0 20rem;
+        margin: 0 15rem;
     }
 }
 
@@ -522,7 +510,7 @@ a[href^="tel:"] {
 
 @media screen and (min-width: 1250px) {
 
-    .floats {
+    .ws-float {
         right: 2rem;
     }
 
@@ -537,7 +525,7 @@ a[href^="tel:"] {
 
       /* SERVICIOS */
     .servicios {
-        margin: 0 30rem;
+        margin: 0 20rem;
     }
 }
 
