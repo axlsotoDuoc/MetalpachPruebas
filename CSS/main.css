@@ -268,95 +268,42 @@ header p span, .servicios p span {
 
 footer {
     display: grid;
+    justify-items: center;
     color: var(--White);
     background: var(--Footer);
 }
 
 .section-footer {
     display: grid;
-    text-align: center;
-    gap: 1.5rem;
-    margin: 2.5rem auto 3rem;
+    gap: 1.2rem;
+    margin: 2rem 4rem;
+    margin-bottom: 0;
     padding-bottom: 2rem;
-}
-
-.section-footer:nth-of-type(3) .description-footer {
-    text-align: center;
-}
-
-
-.section-footer:nth-of-type(4) .description-footer {
-    gap: 1rem;
-}
-
-.section-footer:nth-of-type(3) .description-footer a {
-    text-decoration: underline;
-    color: var(--White);
+    border-bottom: .5px solid rgb(73, 73, 73);
 }
 
 .section-footer h3 {
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
-.description-footer {
-    display: grid;
-    font-size: 1.35rem;
-    font-weight: 200;
-    gap: .6rem;
+.section-footer span {
+    font-size: 1.4rem;
+    font-weight: 100;
 }
 
-.servicios-footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.ubi-footer-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-}
-
-.chile {
-    font-size: 1.3rem;
-}
-
-.pedroMontt, .chile {
-        color: var(--White);
-}
-
-.contact-footer {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    margin-left: 7rem;
-}
-
-.contact-footer a,
-a[href^="tel:"] {
+.section-footer span a {
     color: var(--White);
-    text-decoration: none;
 }
 
-.social-icons-footer {
+.section-footer span a:hover {
+    text-decoration: underline;
+}
+
+.contacto-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.social-icons-footer a svg {
-    transition: all .3s ease;
-}
-
-.social-icons-footer a svg:hover {
-    transform: scale(1.15);
-}
-
-.number_footer {
-    color: var(--White);
+    gap: .7rem;
 }
 
 /* MEDIAS QUERYS*/
@@ -379,19 +326,20 @@ a[href^="tel:"] {
 
 }
 
-@media screen and (width >= 670px) {
-
-    /* Footer */
-    footer {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 @media screen and (width >= 700px) {
     
   /* SERVICIOS */
     .servicios {
         margin: 0 7rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-footer:nth-child(3), .section-footer:nth-child(4) {
+        border: none;
     }
 
 }
@@ -489,6 +437,11 @@ a[href^="tel:"] {
     .servicio-content, .servicio-content span:first-of-type {
         font-size: 1.8rem;
     }
+
+    /* FOOTER */
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
@@ -505,6 +458,15 @@ a[href^="tel:"] {
     footer {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .section-footer:last-of-type {
+        border: none;
+    }
+
+    main {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -519,17 +481,21 @@ a[href^="tel:"] {
 @media screen and (min-width: 1300px) {
 
     footer {
-        padding: 5rem 0;
+        padding: 2rem 0;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section-footer {
+        border: none;
     }
 
       /* SERVICIOS */
     .servicios {
-        margin: 0 20rem;
+        margin: 0 10rem;
     }
-}
-
-@media screen and (min-width: 1500px) {
-
-
+    
+    main {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 }
