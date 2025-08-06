@@ -268,7 +268,6 @@ header p span, .servicios p span {
 
 footer {
     display: grid;
-    justify-items: center;
     color: var(--White);
     background: var(--Footer);
 }
