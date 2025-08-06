@@ -71,8 +71,8 @@ main {
     text-align: center;
     position: fixed;
     z-index: 200;
-    bottom: 1rem;
-    right: 1.5rem;
+    bottom: .7rem;
+    right: .7rem;
     width: 5rem;
     height: 5rem;
     line-height: 5rem;
