@@ -31,6 +31,10 @@
     color: var(--BlueDark);
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /* HEADER */
 
 header {
@@ -38,16 +42,16 @@ header {
     flex-direction: column;
     text-align: center;
     max-width: 70rem;
-    gap: 3rem;
+    gap: 2rem;
     padding: 0 2rem;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 4rem;
     background: var(--White);
 }
     
 header h1 {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--BlueDark);
 }
     
@@ -58,7 +62,7 @@ header h1 {
 }
     
 .header-cont p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: rgb(58, 58, 58);
 }

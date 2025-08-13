@@ -9,6 +9,10 @@
     --Gray: #bebebe;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /* STYLES */
 
 /* HEADER */
@@ -24,16 +28,16 @@ header h1 {
 
 .contact-card-container {
     display: grid;
+    justify-content: center;
     gap: 2rem;
-    margin: 2rem auto;
+    margin: 2rem 2rem;
     margin-bottom: 3rem;
 }
 
 .contact-card-container article {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 2rem;
+    max-width: 50rem;
     gap: 4rem;
     font-size: 1.4rem;
     padding: 2rem;
