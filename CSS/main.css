@@ -76,9 +76,9 @@ main {
     z-index: 200;
     bottom: .7rem;
     right: .7rem;
-    width: 5rem;
-    height: 5rem;
-    line-height: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
     border-radius: 50%;
     cursor: pointer;
     background: #25d366;
@@ -378,6 +378,112 @@ footer {
 
 }
 
+@media screen and (width >= 720px) {
+    
+    /* HEADER */
+    
+    header {
+        position: relative;
+        padding: 2rem 1rem;
+        background: url('/Imágenes/slider-04.jpeg') center / cover no-repeat;
+        overflow: hidden;
+    }
+    
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+        z-index: 1;
+    }
+    
+    .header-content {
+        position: relative;
+        z-index: 2;
+        padding: 0 3rem;
+    }
+    
+    .header-content h1 {
+        font-size: 6rem;
+    }
+    
+    .header-content h1, header p, header p span {
+        color: white;
+        font-weight: 500;
+    }
+
+    header p {
+        font-size: 1.7rem;
+    }
+
+    .main-img {
+        display: none;
+    }
+    
+    .contacto {
+        padding: .8rem 1.5rem;
+        font-size: 1.4rem;
+        max-width: 14rem;
+        border-radius: 5px;
+        color: var(--White);
+        background-color: var(--PrincipalOscuro);
+        transition: all ease-in;
+        cursor: pointer;
+    }
+    
+    /* MAP */
+    .map-div {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        margin: 0 auto;
+    }
+    
+    .map-title {
+        text-align: start;
+        font-size: 3rem;
+        margin-left: 3rem;
+        color: rgb(85, 85, 85);
+    }
+    
+    .map-title h3 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .map-div span:last-of-type {
+        font-size: 1.3rem;
+    }
+    
+    .map {
+        width: 40rem;
+    }
+    
+    /* SERVICIOS */
+    
+    .servicios {
+        margin: 0 12rem;
+    }
+    
+    .servicios-title-h2-cont h2 {
+        font-size: 3rem;
+    }
+    
+    .servicio-content, .servicio-content span:first-of-type {
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media screen and (width >= 743px) {
+    
+    .header-content p {
+        font-size: 1.7rem;
+        font-weight: 100;
+    }
+}
+
+
 @media screen and (width >= 780px) {
     
   /* SERVICIOS */
@@ -387,100 +493,12 @@ footer {
 
 }
 
-@media screen and (width >= 720px) {
-
-    /* HEADER */
-
-    header {
-        position: relative;
-        padding: 4rem 1rem;
-        background: url('/Imágenes/slider-04.jpeg') center / cover no-repeat;
-        overflow: hidden;
-    }
-
-    header::before {
-        content: "";
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
-        z-index: 1;
-    }
-
-    .header-content {
-        position: relative;
-        z-index: 2;
-        padding: 0 3rem;
-    }
-
-    .header-content h1 {
-        font-size: 4rem;
-    }
-
-    .header-content h1, header p, header p span {
-        color: white;
-        font-weight: 500;
-    }
-    
-    .main-img {
-        display: none;
-    }
-
-    .contacto {
-    padding: .8rem 1.5rem;
-    font-size: 1.4rem;
-    max-width: 14rem;
-    border-radius: 5px;
-    color: var(--White);
-    background-color: var(--PrincipalOscuro);
-    transition: all ease-in;
-    cursor: pointer;
-    }
-
-    /* MAP */
-    .map-div {
-        display: grid;
-        grid-template-columns: 1.5fr 2fr;
-        margin: 0 auto;
-    }
-
-    .map-title {
-        text-align: start;
-        font-size: 3rem;
-        margin-left: 3rem;
-        color: rgb(85, 85, 85);
-    }
-
-    .map-title h3 {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    .map-div span:last-of-type {
-        font-size: 1.3rem;
-    }
-
-    .map {
-        width: 40rem;
-    }
-
-    /* SERVICIOS */
-
-    .servicios {
-        margin: 0 12rem;
-    }
-
-    .servicios-title-h2-cont h2 {
-        font-size: 3rem;
-    }
-
-    .servicio-content, .servicio-content span:first-of-type {
-        font-size: 1.8rem;
-    }
-
-}
-
 @media screen and (width >= 900px) {
+    
+    /* HEADER */
+    .header-content {
+        padding: 3rem 0;
+    }
 
     /* SERVICIOS */
     .servicios {
@@ -501,6 +519,36 @@ footer {
     }
 }
 
+@media screen and (width >= 942px) {
+    
+    .header-content h1 {
+        font-size: 6.5rem;
+        font-weight: bold;
+    }
+
+    .header-content p {
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (width >= 983px) {
+    
+    .header-content {
+        padding: 4rem 0rem;
+    }
+
+    .header-content p {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (width >= 1000px) {
+    
+    .map-title h3 {
+        font-size: 3.5rem;
+    }
+}
 
 @media screen and (width >= 1060px) {
     
@@ -509,6 +557,19 @@ footer {
         margin: 0 15rem;
     }
 }
+
+@media screen and (width >= 1100px) {
+    
+    .header-content {
+        padding: 4rem 10rem;
+    }
+
+    .header-content p {
+        font-size: 1.7rem;
+    }
+}
+
+
 
 @media screen and (min-width: 1190px) {
 
@@ -557,4 +618,43 @@ footer {
         margin: 0 10rem;
     }
     
+}
+
+@media screen and (width >= 1310px) {
+    
+    .header-content {
+        padding: 4rem 15rem;
+    }
+}
+
+@media screen and (width >= 1410px) {
+    
+    .header-content {
+        padding: 4rem 20rem;
+    }
+}
+
+@media screen and (width >= 1510px) {
+    
+    .header-content {
+        padding: 6rem 25rem;
+    }
+}
+
+@media screen and (width >= 1610px) {
+    
+    .header-content {
+        padding: 6rem 30rem;
+    }
+}
+
+@media screen and (width >= 1710px) {
+    
+    .header-content {
+        padding: 10rem 40rem;
+    }
+
+    .header-content p {
+        font-size: 2rem;
+    }
 }
