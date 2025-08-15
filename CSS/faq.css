@@ -48,6 +48,10 @@ header {
     margin-top: 4rem;
     background: var(--White);
 }
+
+header::before {
+    background-color: transparent; /* Ajusta la opacidad aquí */
+}
     
 header h1 {
     text-align: center;
@@ -55,7 +59,7 @@ header h1 {
     color: var(--BlueDark);
 }
     
-    .header-cont span {
+.header-cont span {
     font-size: 2rem;
     font-weight: 600;
     color: rgb(173, 56, 56);
