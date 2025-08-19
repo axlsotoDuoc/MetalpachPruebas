@@ -86,10 +86,13 @@ img {
 /* --------------------------------------------------------------------------------- */
 
 .banner {
+    position: sticky;
+    top: 0;
     text-align: center;
     padding: 1rem;
     font-size: 1.1rem;
     color: white;
+    z-index: 200;
     background: var(--BlueDark);
 }
 
@@ -97,7 +100,7 @@ img {
 
 .navbar {
     position: sticky;
-    top: 0;
+    top: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
