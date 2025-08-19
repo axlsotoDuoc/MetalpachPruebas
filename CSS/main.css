@@ -27,7 +27,7 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 1.6rem;
     width: 100%;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 h1,
@@ -56,10 +56,6 @@ img {
     object-fit: cover;
     width: 100%;
     image-rendering: auto;
-}
-
-main {
-    z-index: -50;
 }
 
 @view-transition {
@@ -93,7 +89,7 @@ main {
 .banner {
     text-align: center;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: white;
     background: var(--BlueDark);
 }
@@ -103,11 +99,11 @@ main {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
+    z-index: 100;
     background: var(--White);
     box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.48);
 }
@@ -360,6 +356,10 @@ footer {
 
 @media screen and (width >= 700px) {
 
+    .banner {
+        font-size: 1.3rem;
+    }
+
     .header-content {
         padding: 0 11rem;
     }
@@ -382,7 +382,6 @@ footer {
 @media screen and (width >= 720px) {
     
     /* HEADER */
-    
     header {
         position: relative;
         padding: 2rem 1rem;
@@ -496,6 +495,10 @@ footer {
 
 @media screen and (width >= 900px) {
     
+    .banner {
+        font-size: 1.4rem;
+    }
+
     /* HEADER */
     .header-content {
         padding: 3rem 0;
@@ -546,6 +549,14 @@ footer {
 
 @media screen and (width >= 1000px) {
     
+    .navbar {
+        padding: 1.5rem 3rem;
+    }
+
+    .banner {
+        font-size: 1.4rem;
+    }
+
     .map-title h3 {
         font-size: 3.5rem;
     }
