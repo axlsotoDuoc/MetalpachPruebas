@@ -13,12 +13,6 @@
 
 /* NAVBAR */
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
 
 .navbar h2 {
     position: absolute;
@@ -29,6 +23,11 @@
 .arrow {
     rotate: 180deg;
     color: var(--BlueDark);
+    transition: all .1s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
 }
 
 @view-transition {
