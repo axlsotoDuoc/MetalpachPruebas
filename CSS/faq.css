@@ -106,6 +106,21 @@ details {
     cursor: pointer;
 }
 
+details[open] {
+
+    .arrow-2 {
+        display: block;
+    }
+
+    .arrow-1 {
+        display: none;
+    }
+}
+
+.arrow-2 {
+    display: none;
+}
+
 .details-content {
     display: grid;
     gap: 1rem;

@@ -70,7 +70,7 @@ img {
     position: fixed;
     z-index: 200;
     bottom: .7rem;
-    right: .7rem;
+    right: .1rem;
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
@@ -179,14 +179,23 @@ header p span, .servicios p span {
 }
 
 .map-title h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: .5rem;
 }
 
+.map-div span a {
+    color: black;
+    font-weight: lighter;
+}
+
+.map-div span a:hover {
+    text-decoration: underline;
+}
+
 .map-div span {
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .map {
@@ -439,14 +448,15 @@ footer {
     /* MAP */
     .map-div {
         display: grid;
-        grid-template-columns: 1.5fr 2fr;
-        margin: 0 auto;
+        grid-template-columns: 1.8fr 1fr;
+        margin: 0 3rem;
+        margin-top: 1rem;
     }
     
     .map-title {
         text-align: start;
         font-size: 3rem;
-        margin-left: 3rem;
+        margin-left: rem;
         color: rgb(85, 85, 85);
     }
     
@@ -456,11 +466,11 @@ footer {
     }
     
     .map-div span:last-of-type {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
     
     .map {
-        width: 40rem;
+        width: 35rem;
     }
     
     /* SERVICIOS */
@@ -530,6 +540,7 @@ footer {
 
 @media screen and (width >= 942px) {
     
+
     .header-content h1 {
         font-size: 6.5rem;
         font-weight: bold;
@@ -563,7 +574,7 @@ footer {
     }
 
     .map-title h3 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
 
@@ -654,6 +665,13 @@ footer {
     
     .header-content {
         padding: 6rem 30rem;
+    }
+
+    .map-div {
+        display: grid;
+        grid-template-columns: 1.8fr 1fr;
+        margin: 0 10rem;
+        margin-top: 1rem;
     }
 }
 
